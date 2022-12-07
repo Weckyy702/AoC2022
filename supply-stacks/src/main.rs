@@ -34,7 +34,6 @@ fn apply_step(stacks: &mut Vec<Stack>, step: &Step) {
 
 fn apply_steps(mut stacks: Vec<Stack>, steps: Vec<Step>) -> String {
     steps.iter().for_each(|step| {
-        println!("{stacks:?}");
         apply_step(&mut stacks, step);
     });
     stacks
